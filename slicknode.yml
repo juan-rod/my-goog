@@ -1,0 +1,5 @@
+dependencies:
+  auth: latest
+  auth-email-password: latest
+  core: latest
+  relay: latest

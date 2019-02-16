@@ -1,0 +1,11 @@
+{
+  "default": {
+    "endpoint": "https://my-goog-d386c2ff.us-east1.slicknode.com",
+    "version": "UHJvamVjdFZlcnNpb246OTY",
+    "alias": "my-goog-d386c2ff",
+    "consoleUrl": "https://console.slicknode.com/p/my-goog-d386c2ff",
+    "playgroundUrl": "https://console.slicknode.com/p/my-goog-d386c2ff/playground",
+    "name": "my-goog",
+    "id": "UHJvamVjdDoyNg"
+  }
+}
