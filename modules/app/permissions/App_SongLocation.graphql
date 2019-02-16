@@ -1,10 +1,10 @@
 query App_SongLocationPermission1 {
-  scope(role: ANONYMOUS, operations: [READ])
+  scope(role: ANONYMOUS, operations: [CREATE, UPDATE, DELETE, READ])
 }
 
 
 query App_SongLocationPermission2 {
-  scope(role: STAFF, operations: [CREATE, UPDATE, DELETE])
+  scope(role: STAFF, operations: [CREATE, UPDATE, DELETE, READ])
 }
 
 
