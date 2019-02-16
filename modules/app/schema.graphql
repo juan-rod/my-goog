@@ -1,0 +1,34 @@
+type App_Song implements Node {
+    id: ID!
+    title: String!
+    description: String!
+    time: DateTime!
+    locations: [App_Location] @relation(
+        path: "App_Song=song.App_SongLocation.location=App_Location"
+    )
+}
+
+type App_Location implements Node {
+    id: ID!
+    name: String!
+    url: String!
+    songs: [App_Song] @relation(
+        path: "App_Location=location.App_SongLocation.song=App_Song"
+    )
+}
+
+type App_Map implements Node {
+    id: ID!
+    title: String!
+    titleUrl: String!
+    time: DateTime!
+}
+
+"""
+Edges
+"""
+type App_SongLocation implements Node {
+    id: ID!
+    song: App_Song!
+    location: App_Location!
+}

@@ -1,4 +1,5 @@
 dependencies:
+  '@private/app': ./modules/app
   auth: latest
   auth-email-password: latest
   core: latest

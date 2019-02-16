@@ -1,0 +1,13 @@
+query App_LocationPermission1 {
+  scope(role: ANONYMOUS, operations: [READ])
+}
+
+
+query App_LocationPermission2 {
+  scope(role: STAFF, operations: [CREATE, UPDATE, DELETE])
+}
+
+
+query App_LocationPermission3 {
+  scope(role: RUNTIME, operations: [CREATE, UPDATE, DELETE, READ])
+}

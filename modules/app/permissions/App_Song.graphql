@@ -1,0 +1,13 @@
+query App_SongPermission1 {
+  scope(role: ANONYMOUS, operations: [READ])
+}
+
+
+query App_SongPermission2 {
+  scope(role: STAFF, operations: [CREATE, UPDATE, DELETE])
+}
+
+
+query App_SongPermission3 {
+  scope(role: RUNTIME, operations: [CREATE, UPDATE, DELETE, READ])
+}

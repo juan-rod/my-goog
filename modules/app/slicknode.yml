@@ -1,0 +1,4 @@
+module:
+  id: '@private/app'
+  label: App
+  namespace: App
